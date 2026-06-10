@@ -1,0 +1,10 @@
+.DS_Store
+docs/
+tests/
+
+# Keep source documents private; only publish assets used by the website.
+file/*
+!file/code.png
+!file/202511咨询师简介/
+file/202511咨询师简介/*
+!file/202511咨询师简介/*.jpg
