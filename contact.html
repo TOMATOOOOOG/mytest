@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260611">
+  <link rel="stylesheet" href="css/style.css?v=20260611-2">
 </head>
 <body>
 
@@ -17,8 +17,30 @@
     <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-controls="primary-navigation" aria-expanded="false">☰</button>
     <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html">关于松境</a></li>
-      <li><a href="about-us.html">关于我们</a></li>
-      <li><a href="services.html">我们的服务</a></li>
+      <li class="nav-item nav-item-dropdown">
+        <a href="about-us.html" class="nav-parent-link">关于我们</a>
+        <button class="submenu-toggle" type="button" aria-label="展开关于我们的子菜单" aria-controls="about-submenu" aria-expanded="false">⌄</button>
+        <ul class="nav-submenu" id="about-submenu">
+          <li><a href="about-us.html#about-team">团队介绍</a></li>
+          <li><a href="about-us.html#about-philosophy">松境理念</a></li>
+          <li><a href="about-us.html#about-features">咨询特色</a></li>
+          <li><a href="about-us.html#about-challenges">核心难题</a></li>
+          <li><a href="about-us.html#about-counselors">咨询师特质</a></li>
+          <li><a href="about-us.html#about-notice">咨询注意事项</a></li>
+        </ul>
+      </li>
+      <li class="nav-item nav-item-dropdown">
+        <a href="services.html" class="nav-parent-link">我们的服务</a>
+        <button class="submenu-toggle" type="button" aria-label="展开我们的服务子菜单" aria-controls="services-submenu" aria-expanded="false">⌄</button>
+        <ul class="nav-submenu" id="services-submenu">
+          <li><a href="services.html#service-intro">服务介绍</a></li>
+          <li><a href="services.html#service-directions">咨询方向</a></li>
+          <li><a href="services.html#service-stages">咨询阶段</a></li>
+          <li><a href="services.html#service-process">咨询流程</a></li>
+          <li><a href="services.html#service-formats">服务形式</a></li>
+          <li><a href="services.html#service-notice">咨询须知</a></li>
+        </ul>
+      </li>
       <li><a href="counselors.html">咨询师团队</a></li>
       <li><a href="achievements.html">我们的成果</a></li>
       <li><a href="faq.html">FAQ</a></li>
@@ -105,7 +127,7 @@
     </div>
   </div>
 </footer>
-<script src="js/main.js?v=20260611"></script>
+<script src="js/main.js?v=20260611-2"></script>
 
 <div class="floating-contact">
   <div class="floating-contact-qr">
