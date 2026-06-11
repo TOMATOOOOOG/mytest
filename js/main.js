@@ -2,9 +2,44 @@ document.addEventListener('DOMContentLoaded', function() {
   // Mobile nav toggle
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
-  if (toggle) {
+  var nav = document.querySelector('.nav');
+
+  function setMenuOpen(isOpen) {
+    if (!toggle || !links) return;
+    links.classList.toggle('open', isOpen);
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? '关闭导航菜单' : '打开导航菜单');
+    toggle.textContent = isOpen ? '×' : '☰';
+  }
+
+  if (toggle && links) {
     toggle.addEventListener('click', function() {
-      links.classList.toggle('open');
+      setMenuOpen(!links.classList.contains('open'));
+    });
+
+    links.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        setMenuOpen(false);
+      });
+    });
+
+    document.addEventListener('click', function(event) {
+      if (links.classList.contains('open') && nav && !nav.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && links.classList.contains('open')) {
+        setMenuOpen(false);
+        toggle.focus();
+      }
+    });
+
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768 && links.classList.contains('open')) {
+        setMenuOpen(false);
+      }
     });
   }
 
