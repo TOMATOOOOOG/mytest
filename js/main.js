@@ -137,11 +137,15 @@ document.addEventListener('DOMContentLoaded', function() {
     var mapAddress = mapLink.getAttribute('data-map-address');
     var encodedAddress = encodeURIComponent(mapAddress);
     var userAgent = navigator.userAgent || '';
+    var isWeChat = /MicroMessenger/i.test(userAgent);
     var isIOS = /iPad|iPhone|iPod/.test(userAgent) ||
       (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     var isAndroid = /Android/i.test(userAgent);
 
-    if (isIOS) {
+    if (isWeChat) {
+      mapLink.removeAttribute('target');
+      mapLink.removeAttribute('rel');
+    } else if (isIOS) {
       mapLink.href = 'maps://?daddr=' + encodedAddress;
       mapLink.removeAttribute('target');
       mapLink.removeAttribute('rel');
