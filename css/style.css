@@ -751,6 +751,48 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: var(--space-md);
   font-size: 15px;
 }
+.map-navigation-link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  background: var(--color-secondary);
+  color: var(--color-white);
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(61, 61, 61, 0.12);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.map-navigation-link:hover,
+.map-navigation-link:focus-visible {
+  color: var(--color-white);
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+.map-navigation-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+.map-navigation-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.map-navigation-link span {
+  position: absolute;
+  right: var(--space-md);
+  bottom: var(--space-md);
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(61, 83, 53, 0.82);
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(61, 61, 61, 0.2);
+}
 
 /* === Achievements === */
 .testimonial-card {

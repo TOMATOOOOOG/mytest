@@ -130,4 +130,25 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Open the contact address in the most suitable map application.
+  var mapLink = document.querySelector('.map-navigation-link');
+  if (mapLink) {
+    var mapAddress = mapLink.getAttribute('data-map-address');
+    var encodedAddress = encodeURIComponent(mapAddress);
+    var userAgent = navigator.userAgent || '';
+    var isIOS = /iPad|iPhone|iPod/.test(userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    var isAndroid = /Android/i.test(userAgent);
+
+    if (isIOS) {
+      mapLink.href = 'maps://?daddr=' + encodedAddress;
+      mapLink.removeAttribute('target');
+      mapLink.removeAttribute('rel');
+    } else if (isAndroid) {
+      mapLink.href = 'geo:0,0?q=' + encodedAddress;
+      mapLink.removeAttribute('target');
+      mapLink.removeAttribute('rel');
+    }
+  }
 });
