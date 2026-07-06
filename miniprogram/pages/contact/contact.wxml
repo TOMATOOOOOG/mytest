@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="hero">
+    <view class="eyebrow">Contact</view>
+    <view class="hero-title">联系我们</view>
+    <view class="hero-text">如果您正在犹豫，可以先从一次沟通开始。第一版小程序不放预约表，优先通过微信客服、电话和地图完成联系。</view>
+  </view>
+
+  <view class="section">
+    <view class="action-grid contact-actions">
+      <button class="action-button" open-type="contact">微信咨询</button>
+      <button class="ghost-button" bindtap="callPhone">拨打电话</button>
+      <button class="ghost-button" bindtap="openMap">地图导航</button>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="card contact-card">
+      <view class="card-title">电话</view>
+      <view class="card-text">{{contact.phone}}</view>
+    </view>
+    <view class="card contact-card">
+      <view class="card-title">邮箱</view>
+      <view class="card-text">{{contact.email}}</view>
+    </view>
+    <view class="card contact-card">
+      <view class="card-title">地址</view>
+      <view class="card-text">{{contact.address}}</view>
+    </view>
+    <view class="card contact-card">
+      <view class="card-title">工作时间</view>
+      <view class="card-text" wx:for="{{contact.hours}}" wx:key="*this">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">微信咨询二维码</view>
+    <view class="qr-card">
+      <image class="qr-image" src="{{contact.qrImage}}" mode="aspectFit"></image>
+      <view class="card-text">如客服按钮暂不可用，可扫码添加咨询顾问。</view>
+    </view>
+  </view>
+
+  <view class="map-note">{{contact.mapNote}}</view>
+</view>

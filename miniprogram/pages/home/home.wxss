@@ -1,0 +1,44 @@
+.service-card {
+  display: flex;
+  gap: 20rpx;
+  align-items: flex-start;
+  margin-bottom: 18rpx;
+  padding: 26rpx;
+  border-radius: 22rpx;
+  background: #fffdf8;
+  border: 1rpx solid rgba(109, 139, 116, 0.16);
+}
+
+.service-mark {
+  display: flex;
+  width: 64rpx;
+  height: 64rpx;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(109, 139, 116, 0.14);
+  color: #496553;
+  font-weight: 700;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 86rpx 1fr;
+  gap: 18rpx;
+  margin-bottom: 20rpx;
+  padding: 26rpx;
+  border-radius: 22rpx;
+  background: #fffdf8;
+}
+
+.timeline-index {
+  color: #6d8b74;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.contact-mini {
+  display: grid;
+  gap: 22rpx;
+}

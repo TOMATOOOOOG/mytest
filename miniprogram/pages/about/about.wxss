@@ -1,0 +1,16 @@
+.feature-card {
+  margin-bottom: 18rpx;
+  padding: 28rpx;
+  border-radius: 22rpx;
+  background: #fffdf8;
+  border-left: 8rpx solid rgba(109, 139, 116, 0.48);
+}
+
+.focus-item {
+  margin-bottom: 14rpx;
+  padding: 22rpx 24rpx;
+  border-radius: 18rpx;
+  background: rgba(255, 253, 248, 0.84);
+  color: #67645d;
+  font-size: 27rpx;
+}

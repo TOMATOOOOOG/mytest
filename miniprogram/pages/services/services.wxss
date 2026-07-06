@@ -1,0 +1,60 @@
+.stage-card {
+  margin-bottom: 18rpx;
+  padding: 28rpx;
+  border-radius: 22rpx;
+  background: #fffdf8;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14rpx;
+}
+
+.process-pill {
+  padding: 18rpx 20rpx;
+  border-radius: 18rpx;
+  background: rgba(109, 139, 116, 0.12);
+  color: #496553;
+  font-size: 25rpx;
+  font-weight: 700;
+}
+
+.notice {
+  position: relative;
+  margin-bottom: 16rpx;
+  padding-left: 28rpx;
+  color: #67645d;
+  font-size: 27rpx;
+}
+
+.notice::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #6d8b74;
+}
+
+.faq-card {
+  overflow: hidden;
+  margin-bottom: 16rpx;
+  border-radius: 18rpx;
+  background: #fffdf8;
+  border: 1rpx solid rgba(109, 139, 116, 0.16);
+}
+
+.faq-question {
+  padding: 24rpx 28rpx;
+  color: #24352b;
+  font-weight: 700;
+}
+
+.faq-answer {
+  padding: 0 28rpx 26rpx;
+  color: #67645d;
+  font-size: 27rpx;
+}

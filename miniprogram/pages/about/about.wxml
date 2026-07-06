@@ -1,0 +1,47 @@
+<view class="page">
+  <view class="hero">
+    <view class="eyebrow">About Songjing</view>
+    <view class="hero-title">关于松境</view>
+    <view class="hero-text">{{about.intro}}</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">团队介绍</view>
+    <view class="card" wx:for="{{about.team}}" wx:key="*this">
+      <view class="card-text">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">松境理念</view>
+    <view class="card" wx:for="{{about.philosophy}}" wx:key="title">
+      <view class="card-title">{{index + 1}}. {{item.title}}</view>
+      <view class="card-text">{{item.text}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">咨询特色</view>
+    <view class="feature-card" wx:for="{{about.features}}" wx:key="title">
+      <view class="card-title">{{item.title}}</view>
+      <view class="card-text">{{item.text}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">咨询师特质</view>
+    <view class="pill-row">
+      <view class="pill" wx:for="{{about.traits}}" wx:key="*this">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">我们关注的核心难题</view>
+    <view class="focus-item" wx:for="{{about.focus}}" wx:key="*this">{{item}}</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">咨询注意事项</view>
+    <view class="card-text">{{about.notice}}</view>
+  </view>
+</view>

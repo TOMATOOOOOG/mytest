@@ -1,0 +1,60 @@
+<view class="page">
+  <view class="hero">
+    <view class="eyebrow">{{home.hero.eyebrow}}</view>
+    <view class="hero-title">{{home.hero.title}}</view>
+    <view class="hero-text">{{home.hero.text}}</view>
+  </view>
+
+  <view class="section">
+    <view class="action-grid">
+      <button class="action-button" open-type="contact">微信咨询</button>
+      <button class="ghost-button" bindtap="callPhone">拨打电话</button>
+      <button class="ghost-button" bindtap="goContact">查看地址</button>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="pill-row">
+      <view class="pill" wx:for="{{home.trust}}" wx:key="*this">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">当这些感受反复出现，咨询可以成为一个开始</view>
+    <view class="card" wx:for="{{home.issues}}" wx:key="title">
+      <view class="card-title">{{index + 1}}. {{item.title}}</view>
+      <view class="card-text">{{item.text}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">我们的服务</view>
+    <view class="service-card" wx:for="{{home.services}}" wx:key="title" bindtap="goServices">
+      <view class="service-mark">{{index + 1}}</view>
+      <view>
+        <view class="card-title">{{item.title}}</view>
+        <view class="card-text">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">咨询流程清晰，第一次联系也不用紧张</view>
+    <view class="timeline-item" wx:for="{{home.process}}" wx:key="title">
+      <view class="timeline-index">0{{index + 1}}</view>
+      <view>
+        <view class="card-title">{{item.title}}</view>
+        <view class="card-text">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card contact-mini">
+    <view>
+      <view class="card-title">如果您正在犹豫，可以先从一次沟通开始</view>
+      <view class="card-text">电话：{{contact.phone}}</view>
+      <view class="card-text">邮箱：{{contact.email}}</view>
+    </view>
+    <button class="action-button wide-button" bindtap="goContact">联系松境心理</button>
+  </view>
+</view>

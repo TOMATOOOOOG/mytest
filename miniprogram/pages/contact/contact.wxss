@@ -1,0 +1,27 @@
+.contact-actions {
+  grid-template-columns: 1fr;
+}
+
+.contact-card .card-text + .card-text {
+  margin-top: 4rpx;
+}
+
+.qr-card {
+  padding: 34rpx;
+  text-align: center;
+  border-radius: 22rpx;
+  background: #fffdf8;
+  border: 1rpx solid rgba(109, 139, 116, 0.16);
+}
+
+.qr-image {
+  width: 320rpx;
+  height: 320rpx;
+  margin-bottom: 20rpx;
+}
+
+.map-note {
+  color: #9a7d47;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
