@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css?v=20260706-1">
+  <link rel="stylesheet" href="css/style.css?v=20260706-2">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
     <div class="container hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">专业心理咨询 · 温暖陪伴 · 持续成长</p>
-        <h1>在松境，慢慢找回内心的安定与力量</h1>
+        <h1><span class="hero-title-line">在松境，慢慢找回</span><span class="hero-title-line">内心的安定与力量</span></h1>
         <p class="hero-lead">松境心理为来访者提供情绪压力、亲密关系、青少年成长、家庭关系与个人探索等咨询支持。我们以稳定、尊重和真诚的方式，陪您把困扰说清楚，把力量找回来。</p>
         <div class="hero-actions">
           <a href="contact.html" class="btn btn-primary">预约咨询</a>
@@ -71,9 +71,25 @@
       </div>
       <div class="hero-panel" aria-label="松境心理服务亮点">
         <div class="hero-panel-card main">
-          <span class="panel-kicker">Songjing Psychology</span>
-          <h2>给每一段需要被理解的时刻，一个安静的空间。</h2>
-          <p>从初次沟通、咨询师匹配到持续咨询跟进，团队会协助您找到适合自己的支持方式。</p>
+          <div class="hero-collage" aria-hidden="true">
+            <figure class="collage-photo collage-photo-one">
+              <img src="assets/collage-room.svg" alt="">
+            </figure>
+            <figure class="collage-photo collage-photo-two">
+              <img src="assets/collage-calm.svg" alt="">
+            </figure>
+            <figure class="collage-photo collage-photo-three">
+              <img src="assets/collage-conversation.svg" alt="">
+            </figure>
+            <span class="collage-mark collage-mark-sun"></span>
+            <span class="collage-mark collage-mark-line"></span>
+            <span class="collage-mark collage-mark-hash">#</span>
+          </div>
+          <div class="hero-card-copy">
+            <span class="panel-kicker">Songjing Psychology</span>
+            <h2>给每一段需要被理解的时刻，一个安静的空间。</h2>
+            <p>从初次沟通、咨询师匹配到持续咨询跟进，团队会协助您找到适合自己的支持方式。</p>
+          </div>
         </div>
         <div class="hero-panel-card small">
           <strong>5000+</strong>
@@ -87,7 +103,7 @@
     </div>
   </section>
 
-  <section class="section section-white">
+  <section class="section section-white issue-section">
     <div class="container">
       <div class="section-heading">
         <p class="eyebrow">When To Start</p>
@@ -119,7 +135,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section about-illustration-section">
     <div class="container">
       <div class="narrative-row home-about">
         <div class="narrative-text">
@@ -138,7 +154,7 @@
     </div>
   </section>
 
-  <section class="section section-white">
+  <section class="section section-white service-bubble-section">
     <div class="container">
       <div class="section-heading">
         <p class="eyebrow">Services</p>
@@ -147,16 +163,19 @@
       </div>
       <div class="service-preview-grid">
         <article class="service-preview-card">
+          <span class="service-preview-icon">心</span>
           <h3>个人心理咨询</h3>
           <p>支持情绪压力、焦虑抑郁、人际关系、原生家庭、自我成长与生命意义探索。</p>
           <a href="services.html#service-directions">查看方向</a>
         </article>
         <article class="service-preview-card">
+          <span class="service-preview-icon">家</span>
           <h3>青少年与家庭支持</h3>
           <p>关注学习压力、亲子沟通、情绪行为、人际适应与成长阶段中的家庭互动。</p>
           <a href="services.html#service-directions">了解服务</a>
         </article>
         <article class="service-preview-card">
+          <span class="service-preview-icon">伴</span>
           <h3>情感与关系咨询</h3>
           <p>陪伴来访者理解亲密关系中的模式、冲突、依恋需要与沟通困境。</p>
           <a href="services.html#service-formats">服务形式</a>
@@ -165,7 +184,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section process-sky-section">
     <div class="container">
       <div class="section-heading">
         <p class="eyebrow">Process</p>
@@ -196,7 +215,7 @@
     </div>
   </section>
 
-  <section class="section section-white">
+  <section class="section section-white team-collage-section">
     <div class="container">
       <div class="section-heading">
         <p class="eyebrow">Counselors</p>
@@ -280,7 +299,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260706-1"></script>
+<script src="js/main.js?v=20260706-2"></script>
 
 <div class="floating-contact">
   <div class="floating-contact-qr">
