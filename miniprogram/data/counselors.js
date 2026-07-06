@@ -12,7 +12,7 @@ const counselors = [
   { name: '李双如', image: '/assets/images/counselors/li-shuangru.jpg', formats: ['线上咨询', '临沂面询', '文字咨询'], expertise: '个人探索成长、原生家庭伤害、两性情感关系、学业工作压力', quote: '用心看到每一位来访者的美好，认真理解和支持每一位来访者。' },
   { name: '李思怡', image: '/assets/images/counselors/default.jpg', formats: ['线上咨询', '宁波面询', '文字咨询'], expertise: '青少年成长、个人探索与成长', quote: '走进一个人的内心，是很美好的过程。' },
   { name: '李彤', image: '/assets/images/counselors/li-tong.jpg', formats: ['线上咨询', '宁波面询', '文字咨询'], expertise: '青少年问题、个人成长、关系议题、焦虑抑郁、强迫症', quote: '咨询是一段不断看到创伤下真实内在自我的旅程。' },
-  { name: '林炳龙', image: '/assets/images/counselors/lin-binglong.png', formats: ['线上咨询', '广深面询', '文字咨询'], expertise: '两性情感关系、青少年心理、亲子关系、职场困境', quote: '愿意用一颗善良真诚的心帮助访客一起成长，做真正的自己。' },
+  { name: '林炳龙', image: '/assets/images/counselors/lin-binglong.jpg', formats: ['线上咨询', '广深面询', '文字咨询'], expertise: '两性情感关系、青少年心理、亲子关系、职场困境', quote: '愿意用一颗善良真诚的心帮助访客一起成长，做真正的自己。' },
   { name: '鲁碧', image: '/assets/images/counselors/lu-bi.jpg', formats: ['线上咨询', '温州面询', '文字咨询'], expertise: '原生家庭问题、抑郁焦虑、个人探索与成长', quote: '希望耐心倾听并接纳你内心的痛苦，陪伴你梳理方向。' },
   { name: '任希蕊', image: '/assets/images/counselors/ren-xirui.jpg', formats: ['线上咨询', '宁波面询', '文字咨询'], expertise: '强迫、抑郁、焦虑、个人探索与成长、青少年成长、人际关系', quote: '帮助来访者看到自身的力量与可能性，重拾信心。' },
   { name: '宋秋雨', image: '/assets/images/counselors/song-qiuyu.jpg', formats: ['线上咨询', '宁波面询', '文字咨询'], expertise: '亲密关系、个人成长、职场心理健康、人际关系、情绪困扰', quote: '爱、理解和支持可以陪伴我们在探索中逐步成长。' },
