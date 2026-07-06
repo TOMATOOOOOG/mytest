@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/services/services",
+    "pages/team/team",
+    "pages/about/about",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "navigationBarTitleText": "松境心理",
+    "navigationBarBackgroundColor": "#F8F4EC",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F8F4EC"
+  },
+  "tabBar": {
+    "color": "#766F65",
+    "selectedColor": "#6D8B74",
+    "backgroundColor": "#FFFDF8",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/services/services", "text": "服务" },
+      { "pagePath": "pages/team/team", "text": "团队" },
+      { "pagePath": "pages/about/about", "text": "关于" },
+      { "pagePath": "pages/contact/contact", "text": "联系" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
