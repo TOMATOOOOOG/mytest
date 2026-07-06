@@ -7,8 +7,8 @@
   <path d="M345 218c0-32 26-58 58-58h10c32 0 58 26 58 58v118H345z" fill="#7ba17b"/>
   <path d="M375 336v84M441 336v84" stroke="#3f5d43" stroke-width="14" stroke-linecap="round"/>
   <path d="M95 430h410v46H95z" fill="#d4c2ac"/>
-  <path d="M132 390h168c42 0 76 34 76 76v30H132z" fill="#8fa2c3"/>
-  <path d="M152 390h128c32 0 58 26 58 58v18H152z" fill="#31466f" opacity=".2"/>
+  <path d="M132 390h168c42 0 76 34 76 76v30H132z" fill="#a8c2ae"/>
+  <path d="M152 390h128c32 0 58 26 58 58v18H152z" fill="#496a54" opacity=".18"/>
   <circle cx="446" cy="430" r="58" fill="#fff1b8"/>
   <path d="M406 478h80" stroke="#d4c2ac" stroke-width="14" stroke-linecap="round"/>
   <path d="M116 548c98-42 256-42 368 0" fill="none" stroke="#c9dda7" stroke-width="38" stroke-linecap="round"/>
