@@ -18,11 +18,36 @@
     "backgroundColor": "#FFFDF8",
     "borderStyle": "white",
     "list": [
-      { "pagePath": "pages/home/home", "text": "首页" },
-      { "pagePath": "pages/services/services", "text": "服务" },
-      { "pagePath": "pages/team/team", "text": "团队" },
-      { "pagePath": "pages/about/about", "text": "关于" },
-      { "pagePath": "pages/contact/contact", "text": "联系" }
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/icons/home-normal.png",
+        "selectedIconPath": "assets/icons/home-selected.png"
+      },
+      {
+        "pagePath": "pages/services/services",
+        "text": "服务",
+        "iconPath": "assets/icons/services-normal.png",
+        "selectedIconPath": "assets/icons/services-selected.png"
+      },
+      {
+        "pagePath": "pages/team/team",
+        "text": "团队",
+        "iconPath": "assets/icons/team-normal.png",
+        "selectedIconPath": "assets/icons/team-selected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "assets/icons/about-normal.png",
+        "selectedIconPath": "assets/icons/about-selected.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系",
+        "iconPath": "assets/icons/contact-normal.png",
+        "selectedIconPath": "assets/icons/contact-selected.png"
+      }
     ]
   },
   "style": "v2",
