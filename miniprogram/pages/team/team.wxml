@@ -19,18 +19,18 @@
 
   <view class="section">
     <view class="section-title">咨询师介绍</view>
-    <scroll-view class="filter-scroll" scroll-x="true" show-scrollbar="false">
-      <view class="filter-row">
-        <button
-          wx:for="{{filters}}"
-          wx:key="key"
-          class="filter-chip {{activeFilter === item.key ? 'filter-chip-active' : ''}}"
-          hover-class="tap-active"
-          data-filter="{{item.key}}"
-          bindtap="changeFilter"
-        >{{item.label}}</button>
+    <view class="filter-panel">
+      <view
+        wx:for="{{filters}}"
+        wx:key="key"
+        class="filter-chip {{activeFilter === item.key ? 'filter-chip-active' : ''}}"
+        hover-class="tap-active"
+        data-filter="{{item.key}}"
+        bindtap="changeFilter"
+      >
+        <view class="filter-label">{{item.label}}</view>
       </view>
-    </scroll-view>
+    </view>
 
     <view class="counselor-card" wx:for="{{filteredCounselors}}" wx:key="name">
       <image class="counselor-image" src="{{item.image}}" mode="aspectFill"></image>
