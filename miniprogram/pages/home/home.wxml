@@ -1,21 +1,44 @@
 <view class="page">
-  <view class="hero">
-    <view class="eyebrow">{{home.hero.eyebrow}}</view>
-    <view class="hero-title">{{home.hero.title}}</view>
-    <view class="hero-text">{{home.hero.text}}</view>
-  </view>
+  <view class="home-hero">
+    <view class="hero-copy">
+      <view class="eyebrow">{{home.hero.eyebrow}}</view>
+      <view class="hero-title">{{home.hero.title}}</view>
+      <view class="hero-text">{{home.hero.text}}</view>
 
-  <view class="section">
-    <view class="action-grid">
-      <button class="action-button" open-type="contact">微信咨询</button>
-      <button class="ghost-button" bindtap="callPhone">拨打电话</button>
-      <button class="ghost-button" bindtap="goContact">查看地址</button>
+      <view class="hero-actions">
+        <button class="action-button" open-type="contact">微信咨询</button>
+        <button class="ghost-button" bindtap="goServices">了解服务</button>
+      </view>
+
+      <view class="hero-trust">
+        <view class="trust-item" wx:for="{{home.trust}}" wx:key="*this">{{item}}</view>
+      </view>
+    </view>
+
+    <view class="hero-visual">
+      <view class="brand-card">
+        <view class="brand-kicker">Songjing Psychology</view>
+        <view class="brand-title">给每一段需要被理解的时刻，一个安静的空间。</view>
+        <view class="brand-mark">松</view>
+      </view>
+      <view class="collage">
+        <image class="collage-image collage-one" src="/assets/images/collage-room.svg" mode="aspectFill"></image>
+        <image class="collage-image collage-two" src="/assets/images/collage-calm.svg" mode="aspectFill"></image>
+        <image class="collage-image collage-three" src="/assets/images/collage-conversation.svg" mode="aspectFill"></image>
+      </view>
     </view>
   </view>
 
-  <view class="section">
-    <view class="pill-row">
-      <view class="pill" wx:for="{{home.trust}}" wx:key="*this">{{item}}</view>
+  <view class="section home-contact-bar">
+    <button class="action-button" open-type="contact">添加客服</button>
+    <button class="ghost-button" bindtap="callPhone">拨打电话</button>
+    <button class="ghost-button" bindtap="goContact">地图地址</button>
+  </view>
+
+  <view class="section stat-row">
+    <view class="stat-card" wx:for="{{home.stats}}" wx:key="label">
+      <view class="stat-number">{{item.number}}</view>
+      <view class="stat-label">{{item.label}}</view>
     </view>
   </view>
 
@@ -29,13 +52,14 @@
 
   <view class="section">
     <view class="section-title">我们的服务</view>
-    <view class="service-card" wx:for="{{home.services}}" wx:key="title" bindtap="goServices">
+    <view class="service-card" wx:for="{{home.services}}" wx:key="title">
       <view class="service-mark">{{index + 1}}</view>
       <view>
         <view class="card-title">{{item.title}}</view>
         <view class="card-text">{{item.text}}</view>
       </view>
     </view>
+    <button class="ghost-button wide-button service-more" bindtap="goServices">查看全部服务</button>
   </view>
 
   <view class="section">

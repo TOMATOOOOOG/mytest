@@ -87,14 +87,14 @@ button::after {
 }
 
 .action-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   gap: 14rpx;
 }
 
 .action-button,
 .ghost-button {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   min-height: 78rpx;
