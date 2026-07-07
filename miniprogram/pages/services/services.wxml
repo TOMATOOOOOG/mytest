@@ -49,5 +49,5 @@
     </view>
   </view>
 
-  <button class="action-button wide-button" bindtap="callPhone">联系咨询顾问</button>
+  <button class="action-button wide-button" hover-class="tap-active" bindtap="callPhone">联系咨询顾问</button>
 </view>

@@ -6,8 +6,8 @@
       <view class="hero-text">{{home.hero.text}}</view>
 
       <view class="hero-actions">
-        <button class="action-button" open-type="contact">微信咨询</button>
-        <button class="ghost-button" bindtap="goServices">了解服务</button>
+        <button class="action-button" hover-class="tap-active" bindtap="feedback" open-type="contact">微信咨询</button>
+        <button class="ghost-button" hover-class="tap-active" bindtap="goServices">了解服务</button>
       </view>
 
       <view class="hero-trust">
@@ -30,9 +30,9 @@
   </view>
 
   <view class="section home-contact-bar">
-    <button class="action-button" open-type="contact">添加客服</button>
-    <button class="ghost-button" bindtap="callPhone">拨打电话</button>
-    <button class="ghost-button" bindtap="goContact">地图地址</button>
+    <button class="action-button" hover-class="tap-active" bindtap="feedback" open-type="contact">添加客服</button>
+    <button class="ghost-button" hover-class="tap-active" bindtap="callPhone">拨打电话</button>
+    <button class="ghost-button" hover-class="tap-active" bindtap="goContact">地图地址</button>
   </view>
 
   <view class="section stat-row">
@@ -59,7 +59,7 @@
         <view class="card-text">{{item.text}}</view>
       </view>
     </view>
-    <button class="ghost-button wide-button service-more" bindtap="goServices">查看全部服务</button>
+    <button class="ghost-button wide-button service-more" hover-class="tap-active" bindtap="goServices">查看全部服务</button>
   </view>
 
   <view class="section">
@@ -79,6 +79,14 @@
       <view class="card-text">电话：{{contact.phone}}</view>
       <view class="card-text">邮箱：{{contact.email}}</view>
     </view>
-    <button class="action-button wide-button" bindtap="goContact">联系松境心理</button>
+    <button class="action-button wide-button" hover-class="tap-active" bindtap="goContact">联系松境心理</button>
+  </view>
+
+  <view class="bottom-safe-space"></view>
+
+  <view class="sticky-contact">
+    <button class="sticky-main" hover-class="tap-active" bindtap="feedback" open-type="contact">微信咨询</button>
+    <button class="sticky-ghost" hover-class="tap-active" bindtap="callPhone">电话</button>
+    <button class="sticky-ghost" hover-class="tap-active" bindtap="goContact">地址</button>
   </view>
 </view>

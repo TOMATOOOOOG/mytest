@@ -8,6 +8,7 @@ page {
 
 button {
   margin: 0;
+  transition: transform 0.16s ease, opacity 0.16s ease, background-color 0.16s ease;
 }
 
 button::after {
@@ -105,6 +106,11 @@ button::after {
   line-height: 1.2;
 }
 
+.tap-active {
+  opacity: 0.82;
+  transform: scale(0.97);
+}
+
 .action-button {
   background: #6d8b74;
   color: #ffffff;
@@ -126,6 +132,10 @@ button::after {
   padding: 44rpx 34rpx;
   border-radius: 28rpx;
   background: linear-gradient(145deg, #fffdf8 0%, #edf3e8 100%);
+}
+
+.bottom-safe-space {
+  height: 132rpx;
 }
 
 .hero-title {

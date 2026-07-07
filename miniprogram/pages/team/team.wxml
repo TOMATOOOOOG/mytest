@@ -33,5 +33,5 @@
     </view>
   </view>
 
-  <button class="action-button wide-button" open-type="contact">联系咨询顾问</button>
+  <button class="action-button wide-button" hover-class="tap-active" bindtap="feedback" open-type="contact">联系咨询顾问</button>
 </view>
