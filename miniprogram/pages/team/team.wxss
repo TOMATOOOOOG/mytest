@@ -9,6 +9,32 @@
   margin-bottom: 18rpx;
 }
 
+.filter-scroll {
+  margin: 0 -28rpx 24rpx;
+  white-space: nowrap;
+}
+
+.filter-row {
+  display: flex;
+  gap: 14rpx;
+  padding: 0 28rpx;
+}
+
+.filter-chip {
+  flex: none;
+  min-height: 66rpx;
+  padding: 0 24rpx;
+  border-radius: 999rpx;
+  background: #fffdf8;
+  color: #496553;
+  font-size: 25rpx;
+}
+
+.filter-chip-active {
+  background: #6d8b74;
+  color: #ffffff;
+}
+
 .counselor-card {
   display: flex;
   overflow: hidden;
@@ -44,4 +70,8 @@
   color: #76736c;
   font-size: 24rpx;
   line-height: 1.55;
+}
+
+.load-more {
+  margin-top: 8rpx;
 }

@@ -7,31 +7,42 @@
 
   <view class="section">
     <view class="section-title">松境咨询能够为您解决什么</view>
-    <view class="card" wx:for="{{services.directions}}" wx:key="title">
-      <view class="card-title">{{index + 1}}. {{item.title}}</view>
-      <view class="card-text">{{item.text}}</view>
+    <view class="direction-card" wx:for="{{services.directions}}" wx:key="title">
+      <view class="direction-index">0{{index + 1}}</view>
+      <view>
+        <view class="card-title">{{item.title}}</view>
+        <view class="card-text">{{item.text}}</view>
+      </view>
     </view>
   </view>
 
   <view class="section">
     <view class="section-title">了解咨询阶段</view>
-    <view class="stage-card" wx:for="{{services.stages}}" wx:key="title">
-      <view class="meta-text">0{{index + 1}}</view>
-      <view class="card-title">{{item.title}}</view>
-      <view class="card-text">{{item.text}}</view>
+    <view class="stage-timeline">
+      <view class="stage-card" wx:for="{{services.stages}}" wx:key="title">
+        <view class="stage-dot">{{index + 1}}</view>
+        <view class="stage-body">
+          <view class="card-title">{{item.title}}</view>
+          <view class="card-text">{{item.text}}</view>
+        </view>
+      </view>
     </view>
   </view>
 
   <view class="section">
     <view class="section-title">专业咨询流程</view>
     <view class="process-grid">
-      <view class="process-pill" wx:for="{{services.process}}" wx:key="*this">{{index + 1}}. {{item}}</view>
+      <view class="process-step" wx:for="{{services.process}}" wx:key="*this">
+        <view class="process-number">{{index + 1}}</view>
+        <view class="process-name">{{item}}</view>
+      </view>
     </view>
   </view>
 
   <view class="section">
     <view class="section-title">服务形式</view>
-    <view class="card" wx:for="{{services.formats}}" wx:key="*this">
+    <view class="format-card" wx:for="{{services.formats}}" wx:key="*this">
+      <view class="format-mark">松</view>
       <view class="card-title">{{item}}</view>
     </view>
   </view>
@@ -44,7 +55,11 @@
   <view class="section">
     <view class="section-title">常见问题</view>
     <view class="faq-card" wx:for="{{services.faq}}" wx:key="question">
-      <view class="faq-question" data-index="{{index}}" bindtap="toggleFaq">{{item.question}}</view>
+      <view class="faq-question" data-index="{{index}}" bindtap="toggleFaq">
+        <view>{{item.question}}</view>
+        <view class="faq-toggle" wx:if="{{openFaqIndex === index}}">收起</view>
+        <view class="faq-toggle" wx:else>展开</view>
+      </view>
       <view class="faq-answer" wx:if="{{openFaqIndex === index}}">{{item.answer}}</view>
     </view>
   </view>

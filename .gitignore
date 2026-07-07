@@ -2,6 +2,9 @@
 docs/
 tests/
 miniprogram/project.private.config.json
+miniprogram/node_modules/
+miniprogram/package.json
+miniprogram/package-lock.json
 
 # Keep source documents private; only publish assets used by the website.
 file/*

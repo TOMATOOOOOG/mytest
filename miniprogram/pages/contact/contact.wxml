@@ -39,8 +39,15 @@
     </view>
   </view>
 
-  <view class="section map-card" bindtap="openMap">
-    <image class="map-image" src="/assets/images/contact-map-preview.jpg" mode="aspectFill"></image>
+  <view class="section map-card">
+    <map
+      class="native-map"
+      latitude="{{contact.map.latitude}}"
+      longitude="{{contact.map.longitude}}"
+      scale="{{contact.map.scale}}"
+      markers="{{markers}}"
+      bindtap="openMap"
+    ></map>
     <view class="map-body">
       <view>
         <view class="card-title">地图导航</view>
@@ -53,8 +60,8 @@
   <view class="section">
     <view class="section-title">微信咨询二维码</view>
     <view class="qr-card">
-      <image class="qr-image" src="{{contact.qrImage}}" mode="aspectFit"></image>
-      <view class="card-text">如客服按钮暂不可用，可扫码添加咨询顾问。</view>
+      <image class="qr-image" src="{{contact.qrImage}}" mode="aspectFit" show-menu-by-longpress="true"></image>
+      <view class="card-text">如客服按钮暂不可用，可长按二维码识别或保存后添加咨询顾问。</view>
     </view>
   </view>
 

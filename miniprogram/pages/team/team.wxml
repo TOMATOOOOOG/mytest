@@ -7,7 +7,7 @@
 
   <view class="section">
     <view class="section-title">创始人</view>
-    <view class="card">
+    <view class="card founder-card">
       <view class="card-title">{{founder.name}}</view>
       <view class="team-title">{{founder.title}}</view>
       <view class="pill-row founder-stats">
@@ -19,18 +19,33 @@
 
   <view class="section">
     <view class="section-title">咨询师介绍</view>
-    <view class="counselor-card" wx:for="{{counselors}}" wx:key="name">
+    <scroll-view class="filter-scroll" scroll-x="true" show-scrollbar="false">
+      <view class="filter-row">
+        <button
+          wx:for="{{filters}}"
+          wx:key="key"
+          class="filter-chip {{activeFilter === item.key ? 'filter-chip-active' : ''}}"
+          hover-class="tap-active"
+          data-filter="{{item.key}}"
+          bindtap="changeFilter"
+        >{{item.label}}</button>
+      </view>
+    </scroll-view>
+
+    <view class="counselor-card" wx:for="{{filteredCounselors}}" wx:key="name">
       <image class="counselor-image" src="{{item.image}}" mode="aspectFill"></image>
       <view class="counselor-body">
         <view class="card-title">{{item.name}}</view>
         <view class="team-title">松境心理认证心理咨询师</view>
         <view class="pill-row">
-          <view class="pill" wx:for="{{item.formats}}" wx:key="*this">{{item}}</view>
+          <view class="pill" wx:for="{{item.formats}}" wx:for-item="format" wx:key="*this">{{format}}</view>
         </view>
         <view class="expertise">擅长方向：{{item.expertise}}</view>
         <view class="quote">{{item.quote}}</view>
       </view>
     </view>
+
+    <button wx:if="{{hasMore}}" class="ghost-button wide-button load-more" hover-class="tap-active" bindtap="loadMore">查看更多咨询师</button>
   </view>
 
   <button class="action-button wide-button" hover-class="tap-active" bindtap="feedback" open-type="contact">联系咨询顾问</button>

@@ -57,10 +57,10 @@
   box-shadow: 0 14rpx 34rpx rgba(60, 50, 35, 0.06);
 }
 
-.map-image {
+.native-map {
   display: block;
   width: 100%;
-  height: 220rpx;
+  height: 320rpx;
   background: #edf3e8;
 }
 
