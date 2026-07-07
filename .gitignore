@@ -1,6 +1,7 @@
 .DS_Store
 docs/
 tests/
+miniprogram/project.private.config.json
 
 # Keep source documents private; only publish assets used by the website.
 file/*
