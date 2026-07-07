@@ -941,6 +941,16 @@ img { max-width: 100%; height: auto; display: block; }
 
   .contact-grid { grid-template-columns: 1fr; }
   .contact-info-item { align-items: flex-start; }
+  .map-navigation-link {
+    aspect-ratio: 2.35 / 1;
+  }
+  .map-navigation-link span {
+    right: auto;
+    left: var(--space-sm);
+    top: var(--space-sm);
+    bottom: auto;
+    font-size: 14px;
+  }
   .footer { padding-top: 48px; }
   .footer-grid {
     grid-template-columns: 1fr 1fr;

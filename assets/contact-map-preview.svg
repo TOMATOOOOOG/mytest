@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 720" role="img" aria-labelledby="title desc">
+  <title id="title">松境心理位置示意图</title>
+  <desc id="desc">宁波海曙高桥镇梁祝路12弄良库梧桐里D3-102号，邻近梁祝站与梁祝文化公园。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FCFAF6"/>
+      <stop offset="0.52" stop-color="#F8F4EF"/>
+      <stop offset="1" stop-color="#EEF4E7"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#3F5D43" flood-opacity="0.18"/>
+    </filter>
+    <pattern id="fineGrid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#E8DDD0" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="2048" height="720" fill="url(#paper)"/>
+  <rect width="2048" height="720" fill="url(#fineGrid)" opacity="0.6"/>
+
+  <path d="M-120 640C80 584 176 436 292 344C438 228 520 234 674 176C840 112 970 72 1120 104C1266 134 1374 232 1514 222C1692 210 1802 94 2160 62" fill="none" stroke="#BFDCCE" stroke-width="78" stroke-linecap="round" opacity="0.82"/>
+  <path d="M-120 640C80 584 176 436 292 344C438 228 520 234 674 176C840 112 970 72 1120 104C1266 134 1374 232 1514 222C1692 210 1802 94 2160 62" fill="none" stroke="#F7FBF5" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+
+  <g opacity="0.9">
+    <path d="M-80 120C120 148 282 190 454 236C666 292 836 318 1034 322C1244 326 1458 292 1662 236C1800 198 1934 158 2128 140" fill="none" stroke="#D9D1C7" stroke-width="42" stroke-linecap="round"/>
+    <path d="M-80 120C120 148 282 190 454 236C666 292 836 318 1034 322C1244 326 1458 292 1662 236C1800 198 1934 158 2128 140" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+    <path d="M-80 120C120 148 282 190 454 236C666 292 836 318 1034 322C1244 326 1458 292 1662 236C1800 198 1934 158 2128 140" fill="none" stroke="#EEE7DD" stroke-width="4" stroke-dasharray="26 18" stroke-linecap="round"/>
+
+    <path d="M972 -64C952 108 950 236 956 354C966 520 1008 610 1052 790" fill="none" stroke="#D9D1C7" stroke-width="46" stroke-linecap="round"/>
+    <path d="M972 -64C952 108 950 236 956 354C966 520 1008 610 1052 790" fill="none" stroke="#FFFFFF" stroke-width="32" stroke-linecap="round"/>
+    <path d="M972 -64C952 108 950 236 956 354C966 520 1008 610 1052 790" fill="none" stroke="#EEE7DD" stroke-width="4" stroke-dasharray="26 18" stroke-linecap="round"/>
+
+    <path d="M468 -20C524 144 570 284 608 424C634 520 666 610 712 760" fill="none" stroke="#E0D8CC" stroke-width="28" stroke-linecap="round"/>
+    <path d="M468 -20C524 144 570 284 608 424C634 520 666 610 712 760" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+
+    <path d="M1388 -40C1394 122 1384 270 1342 402C1302 526 1238 610 1168 760" fill="none" stroke="#E0D8CC" stroke-width="28" stroke-linecap="round"/>
+    <path d="M1388 -40C1394 122 1384 270 1342 402C1302 526 1238 610 1168 760" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#C9DDA7" opacity="0.72">
+    <path d="M72 368C156 322 258 318 330 378C398 434 392 548 322 604C252 660 124 646 58 584C-10 520-4 410 72 368Z"/>
+    <path d="M1530 452C1640 392 1762 408 1840 486C1910 556 1878 664 1776 702C1648 750 1482 700 1438 604C1410 542 1454 494 1530 452Z"/>
+    <path d="M1624 20C1698 -20 1806 4 1872 70C1940 138 1918 214 1830 246C1746 276 1608 258 1562 178C1526 114 1554 58 1624 20Z"/>
+  </g>
+
+  <g fill="#E8F0DF" stroke="#FFFFFF" stroke-width="3" opacity="0.9">
+    <rect x="726" y="390" width="118" height="72" rx="12"/>
+    <rect x="862" y="392" width="94" height="70" rx="12"/>
+    <rect x="1096" y="382" width="132" height="80" rx="12"/>
+    <rect x="1248" y="366" width="116" height="74" rx="12"/>
+    <rect x="744" y="488" width="172" height="82" rx="14"/>
+    <rect x="1122" y="500" width="166" height="84" rx="14"/>
+    <rect x="374" y="314" width="144" height="78" rx="14"/>
+    <rect x="1502" y="300" width="128" height="72" rx="12"/>
+  </g>
+
+  <g font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" fill="#667066">
+    <text x="1188" y="286" font-size="30" font-weight="700" fill="#78936D" transform="rotate(-7 1188 286)">中山西路</text>
+    <text x="998" y="198" font-size="28" font-weight="700" fill="#78936D" transform="rotate(86 998 198)">梁祝路</text>
+    <text x="480" y="552" font-size="26">梁祝文化公园</text>
+    <text x="1420" y="226" font-size="24">高桥镇</text>
+  </g>
+
+  <g transform="translate(914 286)" filter="url(#softShadow)">
+    <rect x="-164" y="-94" width="328" height="160" rx="26" fill="#FCFAF6" stroke="#E5D9CA" stroke-width="2"/>
+    <text x="-120" y="-46" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="700" fill="#3F5D43">梁祝站</text>
+    <text x="-120" y="-8" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#667066">轨道交通 1 号线</text>
+    <path d="M-138 28H138" stroke="#E5D9CA" stroke-width="2"/>
+    <text x="-120" y="52" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="17" fill="#78936D">约位于梁祝路 / 中山西路片区</text>
+  </g>
+
+  <g transform="translate(1016 394)" filter="url(#softShadow)">
+    <path d="M0 -128C-54 -128-98 -84-98 -30C-98 46-12 130 0 142C12 130 98 46 98 -30C98 -84 54 -128 0 -128Z" fill="#3F5D43"/>
+    <circle cx="0" cy="-28" r="34" fill="#FCFAF6"/>
+    <circle cx="0" cy="-28" r="16" fill="#AFC3A2"/>
+  </g>
+
+  <g transform="translate(1078 420)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="416" height="148" rx="28" fill="#FFFFFF" stroke="#E5D9CA" stroke-width="2"/>
+    <text x="30" y="48" font-family="'Noto Serif SC', 'Noto Sans SC', serif" font-size="34" font-weight="700" fill="#3F5D43">松境心理</text>
+    <text x="30" y="86" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#667066">良库梧桐里 D3-102</text>
+    <text x="30" y="120" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#78936D">梁祝路12弄 · 点击打开导航</text>
+  </g>
+
+  <g fill="#78936D" opacity="0.45">
+    <circle cx="244" cy="458" r="15"/>
+    <circle cx="286" cy="430" r="10"/>
+    <circle cx="330" cy="476" r="13"/>
+    <circle cx="1568" cy="550" r="12"/>
+    <circle cx="1606" cy="520" r="9"/>
+    <circle cx="1684" cy="582" r="14"/>
+    <circle cx="1726" cy="536" r="10"/>
+    <circle cx="1732" cy="112" r="12"/>
+    <circle cx="1778" cy="136" r="16"/>
+    <circle cx="1820" cy="92" r="10"/>
+  </g>
+
+  <g font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif">
+    <rect x="72" y="56" width="188" height="48" rx="24" fill="#3F5D43" opacity="0.92"/>
+    <text x="104" y="88" font-size="22" font-weight="700" fill="#FFFFFF">位置示意图</text>
+    <text x="72" y="132" font-size="20" fill="#667066">宁波市海曙区高桥镇</text>
+  </g>
+</svg>
