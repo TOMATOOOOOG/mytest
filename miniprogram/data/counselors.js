@@ -28,7 +28,14 @@ const counselors = [
   { name: '枝繁', image: '/assets/images/counselors/default.jpg', formats: ['线上咨询', '济南面询', '文字咨询'], expertise: '青少年成长、亲子咨询、家庭咨询、个人探索与成长、情感咨询', quote: '愿跟你一起走上一段成长之旅，发现爱，拥抱爱。' }
 ]
 
+const counselorsWithAvatars = counselors.map((counselor) => ({
+  ...counselor,
+  avatarImage: counselor.image
+    .replace('/assets/images/counselors/', '/assets/images/counselors/avatars/')
+    .replace(/\.(jpg|jpeg|png)$/i, '.jpg')
+}))
+
 module.exports = {
   founder,
-  counselors
+  counselors: counselorsWithAvatars
 }

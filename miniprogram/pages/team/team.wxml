@@ -33,10 +33,17 @@
     </view>
 
     <view class="counselor-card" wx:for="{{filteredCounselors}}" wx:key="name">
-      <image class="counselor-image" src="{{item.image}}" mode="aspectFill"></image>
+      <view class="avatar-wrap">
+        <image class="counselor-image" src="{{item.avatarImage}}" mode="aspectFill"></image>
+      </view>
       <view class="counselor-body">
-        <view class="card-title">{{item.name}}</view>
-        <view class="team-title">松境心理认证心理咨询师</view>
+        <view class="counselor-head">
+          <view>
+            <view class="card-title">{{item.name}}</view>
+            <view class="team-title">松境心理认证心理咨询师</view>
+          </view>
+          <view class="counselor-badge">咨询师</view>
+        </view>
         <view class="pill-row">
           <view class="pill" wx:for="{{item.formats}}" wx:for-item="format" wx:key="*this">{{format}}</view>
         </view>
