@@ -65,4 +65,12 @@
   </view>
 
   <button class="action-button wide-button" hover-class="tap-active" bindtap="callPhone">联系咨询顾问</button>
+
+  <view class="bottom-safe-space"></view>
+
+  <view class="sticky-contact">
+    <button class="sticky-main" hover-class="tap-active" bindtap="feedback" open-type="contact">微信咨询</button>
+    <button class="sticky-ghost" hover-class="tap-active" bindtap="callPhone">电话</button>
+    <button class="sticky-ghost" hover-class="tap-active" bindtap="goContact">地址</button>
+  </view>
 </view>
