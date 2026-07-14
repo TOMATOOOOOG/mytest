@@ -64,6 +64,4 @@
       <view class="card-text">如客服按钮暂不可用，可长按二维码识别或保存后添加咨询顾问。</view>
     </view>
   </view>
-
-  <view class="map-note">{{contact.mapNote}}</view>
 </view>

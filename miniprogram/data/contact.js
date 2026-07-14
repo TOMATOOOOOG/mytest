@@ -10,8 +10,7 @@ const contact = {
     longitude: 121.48353204131124,
     scale: 18
   },
-  qrImage: '/assets/images/contact-qr.png',
-  mapNote: '坐标来自高德地图分享链接，上线前请用微信真机预览确认导航落点。'
+  qrImage: '/assets/images/contact-qr.png'
 }
 
 module.exports = contact
