@@ -7,7 +7,6 @@ const founder = {
 
 const counselors = [
   { name: '陈新雅', image: '/assets/images/counselors/chen-xinya.jpg', formats: ['线上咨询', '宁波面询', '文字咨询'], expertise: '青少年成长、亲子咨询、家庭咨询、个人探索与成长、情感咨询', quote: '用温暖、真诚与理解陪伴访客面对受伤经历，逐步找回对生活的选择感。' },
-  { name: '董晓童', image: '/assets/images/counselors/default.jpg', formats: ['线上咨询', '线下咨询', '文字咨询'], expertise: '青少年心理、留学生心理、进食障碍、两性情感、原生家庭、个人成长', quote: '帮助访客看见自己，理解自己，将创伤和痛苦转化为让自己幸福的经验。' },
   { name: '胡启璇', image: '/assets/images/counselors/hu-qixuan.jpg', formats: ['线上咨询', '北京面询', '文字咨询'], expertise: '青少年成长、亲子咨询、家庭咨询、个人探索与成长、情感咨询', quote: '愿以理解和支持陪伴你面对内心深处的受伤经历，并发现新的生活可能。' },
   { name: '李双如', image: '/assets/images/counselors/li-shuangru.jpg', formats: ['线上咨询', '临沂面询', '文字咨询'], expertise: '个人探索成长、原生家庭伤害、两性情感关系、学业工作压力', quote: '用心看到每一位来访者的美好，认真理解和支持每一位来访者。' },
   { name: '李思怡', image: '/assets/images/counselors/default.jpg', formats: ['线上咨询', '宁波面询', '文字咨询'], expertise: '青少年成长、个人探索与成长', quote: '走进一个人的内心，是很美好的过程。' },
